@@ -15,6 +15,12 @@
         "unfocused_border": "Base03",
         "bar_accent": "Base0D"
     },
+    "animation": {
+        "enabled": true,
+        "duration": 150,
+        "fps": 120,
+        "style": "EaseInQuart"
+    },
     "stackbar": {
         "height": 0,
         "mode": "OnStack",
