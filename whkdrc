@@ -8,7 +8,9 @@ alt + shift + o         : komorebic stop; komorebic start --whkd
 # App shortcuts - these require shell to be pwsh / powershell
 # The apps will be focused if open, or launched if not open
 # alt + f                 : if ($wshell.AppActivate('Firefox') -eq $False) { start firefox }
-# alt + b                 : if ($wshell.AppActivate('Chrome') -eq $False) { start chrome }
+alt + b                 : if ($wshell.AppActivate('Chrome') -eq $False) { start chrome }
+# alt + return            : if ($wshell.AppActivate('WindowsTerminal') -eq $False) { start wt }
+alt + t                 : powershell -NoProfile -ExecutionPolicy Bypass -File "$env:USERPROFILE\.config\focus_or_launch.ps1" -ProcessName "WindowsTerminal" -LaunchCommand "wt"
 
 alt + q                 : komorebic close
 alt + m                 : komorebic minimize
@@ -44,7 +46,7 @@ alt + i                 : komorebic resize-axis vertical increase
 alt + o                 : komorebic resize-axis vertical decrease
 
 # Manipulate windows
-alt + t                 : komorebic toggle-float
+# alt + t                 : komorebic toggle-float
 alt + shift + f         : komorebic toggle-monocle
 alt + f                 : komorebic toggle-maximize
 
