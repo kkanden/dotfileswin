@@ -8,9 +8,10 @@ alt + shift + o         : komorebic stop; komorebic start --whkd
 # App shortcuts - these require shell to be pwsh / powershell
 # The apps will be focused if open, or launched if not open
 # alt + f                 : if ($wshell.AppActivate('Firefox') -eq $False) { start firefox }
-alt + b                 : if ($wshell.AppActivate('Chrome') -eq $False) { start chrome }
-# alt + return            : if ($wshell.AppActivate('WindowsTerminal') -eq $False) { start wt }
+alt + b                 : powershell -NoProfile -ExecutionPolicy Bypass -File "$env:USERPROFILE\.config\focus_or_launch.ps1" -ProcessName "chrome" -LaunchCommand "chrome"
 alt + t                 : powershell -NoProfile -ExecutionPolicy Bypass -File "$env:USERPROFILE\.config\focus_or_launch.ps1" -ProcessName "WindowsTerminal" -LaunchCommand "wt"
+alt + s                 : powershell -NoProfile -ExecutionPolicy Bypass -File "$env:USERPROFILE\.config\focus_or_launch.ps1" -ProcessName "spotify" -LaunchCommand "C:\Users\oliwia\AppData\Roaming\Spotify\Spotify.exe"
+alt + d                 : powershell -NoProfile -ExecutionPolicy Bypass -File "$env:USERPROFILE\.config\focus_or_launch.ps1" -ProcessName "Discord" -LaunchCommand "C:\Users\oliwia\AppData\Local\Discord\Update.exe" -LaunchArguments "--processStart Discord.exe"
 
 alt + q                 : komorebic close
 alt + m                 : komorebic minimize
