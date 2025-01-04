@@ -1,16 +1,14 @@
 .shell powershell
 
 # Reload whkd configuration
-# alt + o                 : taskkill /f /im whkd.exe && start /b whkd # if shell is cmd
-alt + o                 : taskkill /f /im whkd.exe; Start-Process whkd -WindowStyle hidden # if shell is pwsh / powershell
-alt + shift + o         : komorebic stop; komorebic start --whkd
+alt + r                 : taskkill /f /im whkd.exe; Start-Process whkd -WindowStyle hidden # if shell is pwsh / powershell
+# alt + shift + r         : komorebic stop; komorebic start --whkd
 
 # App shortcuts - these require shell to be pwsh / powershell
 # The apps will be focused if open, or launched if not open
-# alt + f                 : if ($wshell.AppActivate('Firefox') -eq $False) { start firefox }
 alt + b                 : powershell -NoProfile -ExecutionPolicy Bypass -File "$env:USERPROFILE\.config\focus_or_launch.ps1" -ProcessName "chrome" -LaunchCommand "chrome"
 alt + t                 : powershell -NoProfile -ExecutionPolicy Bypass -File "$env:USERPROFILE\.config\focus_or_launch.ps1" -ProcessName "WindowsTerminal" -LaunchCommand "wt"
-alt + s                 : powershell -NoProfile -ExecutionPolicy Bypass -File "$env:USERPROFILE\.config\focus_or_launch.ps1" -ProcessName "spotify" -LaunchCommand "C:\Users\oliwia\AppData\Roaming\Spotify\Spotify.exe"
+alt + z                 : powershell -NoProfile -ExecutionPolicy Bypass -File "$env:USERPROFILE\.config\focus_or_launch.ps1" -ProcessName "spotify" -LaunchCommand "C:\Users\oliwia\AppData\Roaming\Spotify\Spotify.exe"
 alt + d                 : powershell -NoProfile -ExecutionPolicy Bypass -File "$env:USERPROFILE\.config\focus_or_launch.ps1" -ProcessName "Discord" -LaunchCommand "C:\Users\oliwia\AppData\Local\Discord\Update.exe" -LaunchArguments "--processStart Discord.exe"
 
 alt + q                 : komorebic close
@@ -44,10 +42,10 @@ alt + oem_6             : komorebic cycle-stack next # oem_6 is ]
 alt + p                 : komorebic resize-axis horizontal increase
 alt + u                 : komorebic resize-axis horizontal decrease
 alt + i                 : komorebic resize-axis vertical increase
-alt + o                 : komorebic resize-axis vertical decrease
+# alt + o                 : komorebic resize-axis vertical decrease
 
 # Manipulate windows
-# alt + t                 : komorebic toggle-float
+alt + g                 : komorebic toggle-float
 alt + shift + f         : komorebic toggle-monocle
 alt + f                 : komorebic toggle-maximize
 
