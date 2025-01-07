@@ -367,6 +367,15 @@
             }
         ]
     },
+    "Counter-Strike": {
+        "ignore": [
+            {
+                "kind": "Title",
+                "id": "Counter-Strike 2",
+                "matching_strategy": "Equals"
+            }
+        ]
+    },
     "DS4Windows": {
         "tray_and_multi_window": [
             {
