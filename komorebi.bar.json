@@ -1,19 +1,37 @@
 {
     "$schema": "https://raw.githubusercontent.com/LGUG2Z/komorebi/v0.1.31/schema.bar.json",
     "monitor": {
-        "index": 0
+        "index": 0,
+        "work_area_offset": {
+            "left": 0,
+            "top": 28,
+            "right": 0,
+            "bottom": 28
+        }
+    },
+    "frame": {
+        "inner_margin": {
+            "x": 10,
+            "y": 0
+        }
+    },
+    "position": {
+        "end": {
+            "x": 1920,
+            "y": 30
+        }
     },
     "font_size": 12,
-    "font_family": "JetBrains Mono",
+    "font_family": "JetBrainsMono",
     "theme": {
         "palette": "Catppuccin",
-        "name": "Frappe",
+        "name": "Macchiato",
         "accent": "Pink"
     },
     "grouping": {
         "kind": "Widget",
         "rounding": 10,
-        "style": "DefaultWithGlowB3O1S2"
+        "style": "Default"
     },
     "transparency_alpha": 0,
     "left_widgets": [
@@ -28,9 +46,16 @@
                 },
                 "focused_window": {
                     "enable": true,
-                    "show_icon": true,
-                    "display": "IconAndText"
+                    "display": "IconAndTextOnSelected"
                 }
+            }
+        }
+    ],
+    "center_widgets": [
+        {
+            "Time": {
+                "enable": true,
+                "format": "TwentyFourHour"
             }
         }
     ],
@@ -49,12 +74,6 @@
             "Date": {
                 "enable": true,
                 "format": "YearMonthDate"
-            }
-        },
-        {
-            "Time": {
-                "enable": true,
-                "format": "TwentyFourHour"
             }
         }
     ]
