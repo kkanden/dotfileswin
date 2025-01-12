@@ -83,6 +83,16 @@
             "kind": "Exe",
             "id": "Rterm.exe",
             "matching_strategy": "Equals"
+        },
+        {
+            "kind": "Exe",
+            "id": "obs64.exe",
+            "matching_strategy": "Equals"
+        },
+        {
+            "kind": "Exe",
+            "id": "explorer.exe",
+            "matching_strategy": "Equals"
         }
     ]
 }
