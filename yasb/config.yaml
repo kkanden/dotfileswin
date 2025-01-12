@@ -44,25 +44,30 @@ widgets:
         label_alt: "<span>\uf001</span> {artist} - {title}"
         hide_empty: true
         max_field_size:
-          label: 40
+          label: 20
           label_alt: 20
-        show_thumbnail: false
+        show_thumbnail: true
         controls_only: false
         controls_left: true
-        thumbnail_alpha: 0
-        thumbnail_padding: 0
-        thumbnail_corner_radius: 0
+        thumbnail_alpha: 50
+        thumbnail_padding: 50
+        thumbnail_corner_radius: 12
         icons:
           prev_track: "\ue892"
           next_track: "\ue893"
           play: "\ue768"
           pause: "\ue769"
+        callbacks:
+          on_left: "do_nothing"
+
   clock:
       type: "yasb.clock.ClockWidget"
       options:
         label: "<span>\uf017</span> {%d/%m/%Y, %H:%M:%S}"
         label_alt: "<span>\uf017</span> {%a, %d %b %H:%M:%S}"
         timezones: [] #Looking up time zone info from registry
+        callbacks:
+          on_left: "do_nothing"
   taskbar:
     type: "yasb.taskbar.TaskbarWidget"
     options:
@@ -185,14 +190,16 @@ widgets:
   active_window:
       type: "yasb.active_window.ActiveWindowWidget"
       options:
-        label: "{win[title]}"
+        label: "{win[process][name]}"
         label_alt: ""
         label_no_window: ""
         label_icon: true
         label_icon_size: 18
         max_length: 40
         max_length_ellipsis: "..."
-        monitor_exclusive: true
+        monitor_exclusive: false
+        callbacks:
+          on_left: "do_nothing"
   battery:
       type: "yasb.battery.BatteryWidget"
       options:
