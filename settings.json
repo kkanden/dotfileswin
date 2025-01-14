@@ -145,7 +145,8 @@
         },
         {
             "command": "toggleFocusMode",
-            "keys": "f5"
+            "id": "User.toggleFocusMode",
+            "keys": "f6"
         }
     ],
     "alwaysShowTabs": true,
@@ -164,7 +165,7 @@
         "defaults": {
             "colorScheme": "Kanagawa",
             "font": {
-                "face": "JetBrainsMono NF",
+                "face": "JetBrainsMono Nerd Font",
                 "features": {
                     "zero": 1
                 },
