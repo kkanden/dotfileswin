@@ -33,7 +33,7 @@ bars:
       bottom: 1
       right: 5
     widgets:
-      left: ["clock"]
+      left: ["clock", "komorebi_workspaces"]
       center: ["active_window"]
       right: ["language", "media", "weather", "volume", "power_menu"]
 widgets:
@@ -44,8 +44,8 @@ widgets:
         label_alt: "<span>\uf001</span> {artist} - {title}"
         hide_empty: true
         max_field_size:
-          label: 20
-          label_alt: 20
+          label: 10
+          label_alt: 10
         show_thumbnail: true
         controls_only: false
         controls_left: true
@@ -87,12 +87,12 @@ widgets:
       options:
           label_offline: "\u26a1 Offline"
           label_workspace_btn: "\udb81\udc3d"
-          label_workspace_active_btn: ""
+          label_workspace_active_btn: "\udb81\udc3e"
           label_workspace_populated_btn: "\udb81\udc3e"
           label_default_name: "{index}"
-          label_zero_index: false
-          hide_empty_workspaces: false
-          hide_if_offline: false
+          label_zero_index: true
+          hide_empty_workspaces: true
+          hide_if_offline: true
           animation: true
           container_padding:
             top: 0
@@ -209,11 +209,11 @@ widgets:
   language:
       type: "yasb.language.LanguageWidget"
       options:
-        label: "{lang[language_code]}"
+        label: "<span>\uf11c</span> {lang[language_code]}"
         label_alt: "{lang[full_name]}"
         update_interval: 1
         callbacks:
-          on_left: "toggle_label"
+          on_left: "do_nothing"
           on_middle: "do_nothing"
           on_right: "do_nothing"
   memory:
