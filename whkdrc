@@ -46,8 +46,8 @@ alt + i                 : komorebic resize-axis vertical increase
 
 # Manipulate windows
 alt + g                 : komorebic toggle-float
-alt + shift + f         : komorebic toggle-monocle
-alt + f                 : komorebic toggle-maximize
+alt + f                 : komorebic toggle-monocle
+alt + shift + f         : komorebic toggle-maximize
 
 # Window manager options
 alt + shift + r         : komorebic retile
