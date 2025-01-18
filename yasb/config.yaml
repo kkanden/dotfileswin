@@ -130,10 +130,11 @@ widgets:
   weather:
       type: "yasb.weather.WeatherWidget"
       options:
-        label: "<span>{icon}</span> {temp_c}"
-        label_alt: "{location}: {conditions}, Min {min_temp_c}, Max {max_temp_c}"
+        label: "<span>{icon}</span> {conditions} {min_temp}, {max_temp}, {precip}"
+        label_alt: "<span>{icon}</span> {location}: {conditions}, Min {min_temp}, Max {max_temp}"
         api_key: '3bf4cf9a7c3f40d6b31174128242807'
-        update_interval: 600 #Update interval in seconds, Min 600
+        update_interval: 600 
+        units: "metric"
         hide_decimal: true
         location: 'Poland Wroclaw'
         callbacks:
@@ -149,8 +150,6 @@ widgets:
           snowyIcyNight: "\udb81\udd98"
           blizzard: "\uebaa"
           default: "\uebaa"
-          # https://www.weatherapi.com/docs/
-          # Usage {temp_c}, {min_temp_c}, {max_temp_c}, {temp_f}, {min_temp_f}, {max_temp_f}, {location}, {humidity}, {icon}, {conditions}
   volume:
       type: "yasb.volume.VolumeWidget"
       options:
