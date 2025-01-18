@@ -93,6 +93,11 @@
             "kind": "Exe",
             "id": "explorer.exe",
             "matching_strategy": "Equals"
+        },
+        {
+            "kind": "Exe",
+            "id": "ApplicationFrameHost.exe",
+            "matching_strategy": "Equals"
         }
     ]
 }
