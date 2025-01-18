@@ -18,9 +18,9 @@
     "mouse_follows_focus": false,
     "animation": {
         "enabled": true,
-        "duration": 150,
+        "duration": 250,
         "fps": 120,
-        "style": "EaseInQuart"
+        "style": "EaseInOutExpo"
     },
     "stackbar": {
         "height": 0,
