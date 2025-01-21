@@ -1,0 +1,10 @@
+[user]
+	email = 24637207+kkanden@users.noreply.github.com
+	name = oliwia
+[init]
+	defaultbranch = main
+[core]
+	autocrlf = true
+	editor = nvim
+[alias]
+	lg = log --oneline --graph --all --decorate --pretty=format:'%C(yellow)%h%Creset - %C(blue)%an%Creset - %C(green)%ar%Creset %C(red)%d%Creset - %s'
