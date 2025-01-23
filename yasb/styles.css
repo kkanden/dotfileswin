@@ -39,7 +39,7 @@
 	margin: 0;
     background-color: var(--base);
     opacity: 0.1;
-    border-radius: 12px;
+    border-radius: 8px;
 }
 .widget {
 	padding: 0 8px;
