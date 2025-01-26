@@ -90,6 +90,16 @@
             "kind": "Exe",
             "id": "ApplicationFrameHost.exe",
             "matching_strategy": "Equals"
+        },
+        {
+            "kind": "Title",
+            "id": "Counter-Strike 2",
+            "matching_strategy": "Equals"
+        },
+        {
+            "kind": "Exe",
+            "id": "steamwebhelper.exe",
+            "matching_strategy": "Equals"
         }
     ]
 }
