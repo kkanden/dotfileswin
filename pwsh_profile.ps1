@@ -12,6 +12,13 @@ Set-PSReadLineOption -HistorySearchCursorMovesToEnd
 Import-Module PSFzf
 Set-PsFzfOption -PSReadlineChordProvider 'Ctrl+f' -PSReadlineChordReverseHistory 'Ctrl+r'
 
+## Terminal Icons
+Import-Module Terminal-Icons
+
+## PowerLS
+Import-Module PowerColorLS
+Set-Alias -Name ls -Value PowerColorLS -Option AllScope
+
 # EXTRA VARIABLES
 $csconf = "$env:C:\Program Files (x86)\Steam\steamapps\common\Counter-Strike Global Offensive\game\csgo\cfg"
 $Env:KOMOREBI_CONFIG_HOME = "$env:USERPROFILE\.config"
