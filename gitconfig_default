@@ -7,4 +7,4 @@
 	autocrlf = true
 	editor = nvim
 [alias]
-	lg = log --oneline --graph --all --decorate --date=iso --pretty=format:'%C(yellow)%h%Creset - %C(blue)%an%Creset - %C(green)%ad%Creset %C(red)%d%Creset - %s'
+	lg = log --oneline --graph --all --decorate --date=format:'%Y-%m-%d %H:%M' --pretty=format:'%C(yellow)%h%Creset - %C(blue)%an <%ae>%Creset - %C(green)%ad%Creset -%C(red)%d%Creset %s'
