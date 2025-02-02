@@ -1,3 +1,4 @@
+$startTime = Get-Date
 # MODULES 
 
 ## omp
@@ -64,3 +65,8 @@ function which ($command) {
 
 ### ENABLE ZOXIDE - must be on the end
 Invoke-Expression (& { (zoxide init powershell | Out-String) })
+
+
+$endTime = Get-Date
+$elapsedTime = $endTime - $startTime
+"took $($elapsedTime.TotalMilliseconds) ms" | cowsay | meow
