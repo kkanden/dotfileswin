@@ -105,6 +105,11 @@
             "kind": "Exe",
             "id": "steamwebhelper.exe",
             "matching_strategy": "Equals"
+        },
+        {
+            "kind": "Exe",
+            "id": "PowerToys.EnvironmentVariables.exe",
+            "matching_strategy": "Equals"
         }
     ]
 }
