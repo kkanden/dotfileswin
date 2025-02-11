@@ -1,2 +1,2 @@
-# dotfiles
-My .config files
+# Windows dotfiles
+My Windows .config files
