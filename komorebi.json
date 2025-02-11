@@ -1,5 +1,5 @@
 {
-    "$schema": "https://raw.githubusercontent.com/LGUG2Z/komorebi/v0.1.31/schema.json",
+    "$schema": "https://raw.githubusercontent.com/LGUG2Z/komorebi/master/schema.json",
     "app_specific_configuration_path": "$Env:KOMOREBI_CONFIG_HOME/applications.json",
     "window_hiding_behaviour": "Cloak",
     "cross_monitor_move_behaviour": "Insert",
@@ -9,11 +9,12 @@
     "border_width": 3,
     "border_offset": -1,
     "border_style": "System",
-    "theme": {
-        "name": "CatppuccinMocha",
-        "palette": "Base16",
-        "unfocused_border": "Base03",
-        "bar_accent": "Base0D"
+    "border_colours": {
+        "single": "#f38ba8",
+        "monocle": "#cba6f7",
+        "unfocused": "#cdd6f4",
+        "stack": "#74c7ec",
+        "floating": "#a6e3a1"
     },
     "mouse_follows_focus": false,
     "animation": {
@@ -23,11 +24,7 @@
         "style": "EaseInOutExpo"
     },
     "stackbar": {
-        "height": 0,
-        "mode": "OnStack",
-        "tabs": {
-            "width": 200
-        }
+        "mode": "Never"
     },
     "monitors": [
         {

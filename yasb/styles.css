@@ -22,12 +22,13 @@
     --surface2: #585b70;
     --surface1: #45475a;
     --surface0: #282936;
+    --background: rgba(31, 31, 40, 0.9);
     --base: rgba(30, 30, 46, 0.99);
-    --mantle: rgba(24, 24, 37, 0.5);
-    --crust: rgba(17, 17, 27, 0.5);
+    --mantle: rgba(24, 24, 37, 0.9);
+    --crust: rgba(17, 17, 27, 0.9);
 }
 *{
-	font-size: 12px;
+	font-size: 12px   ;
 	color: var(--subtext0);
 	font-weight: 800;
 	font-family: "JetBrainsMono NFP";
@@ -37,8 +38,7 @@
 .yasb-bar {
 	padding: 0 6px;
 	margin: 0;
-    background-color: var(--base);
-    opacity: 0.1;
+    background-color: var(--background);
     border-radius: 8px;
 }
 .widget {
@@ -51,8 +51,11 @@
 .widget .label.alt {
 	padding: 1px 8px 1px 8px;
 }
- .clock-widget .label {
+.clock-widget .label {
     padding-left:8px;
+}
+.language-widget .icon {
+    color: var(--red)
 }
 .komorebi-workspaces .widget-container {
     margin-left: 0px;
@@ -60,7 +63,7 @@
 .komorebi-workspaces .widget-container {
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
-    border-left: none
+    border-left: none;
 }
 .komorebi-workspaces .offline-status {
     color: var(--subtext1);
@@ -113,7 +116,7 @@
 	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 .power-menu-widget .label {
-	color: #eba0ac;
+	color: var(--red);
 	font-size: 16px;
 }
 .power-menu-popup .button {
@@ -143,6 +146,9 @@
 	padding-top: 54px;
 	color: rgba(255, 255, 255, 0.25);
 }
+.power-menu-popup .button.cancel {
+    height: 32px
+}
 .power-menu-popup .button.cancel .icon {
 	color: rgba(243, 139, 168, 0.55);
 }
@@ -161,7 +167,7 @@
 }
 .volume-widget .icon {
 	font-size: 15px;
-	color: var(--blue);
+	color: var(--red);
 	margin: 1px 3px 1px 0px;
 } 
 .start-menu .icon {
@@ -169,22 +175,24 @@
 	color: #89b4fa
 }
 .clock-widget .icon {
-	color: #cba6f7;
+	color: var(--red);
     font-size: 14px;
 }
 /* WEATHER WIDGET */
 .weather-widget .icon {
 	font-size: 16px;
 	margin: 0 2px 0px 0;
+    color: var(--red)
 }
 .weather-widget .label {
     padding-right:0px;
+    /* color: var(--red) */
 }
 .weather-widget .icon.sunnyDay {
-	color: rgb(221, 210, 107);
+	/* color: rgb(221, 210, 107); */
 }
 .weather-widget .icon.clearNight {
-	color: rgb(107, 189, 221);
+	/* color: rgb(107, 189, 221); */
 	font-size: 20px;
 	margin: -1px 2px 0px 0;
 }
@@ -193,23 +201,27 @@
 }
 .weather-widget .icon.cloudyDay {
     font-size: 18px;
-    color: rgb(221, 210, 107);
+    /* color: rgb(221, 210, 107); */
 }
 .weather-widget .icon.rainyDay {
-    color: rgb(245, 224, 220)
+    /* color: rgb(245, 224, 220) */
 }
 
 .media-widget {
 	padding: 0;
 	margin: 0;
+    width: 100px;
+}
+.media-widget .widget-container {
+    height: 1000px;
 }
 .media-widget .label {
-	color: var(--lavender);
+	/* color: var(--red); */
     padding: 0px;
-	padding-right: 16px;
+	padding-right: 0px;
 }
 .media-widget .btn {
-	color: var(--overlay1);
+	color: var(--red);
 	padding: 0 0px;
 	padding-right: 0px;
 	margin: 4px 0;
@@ -269,7 +281,7 @@
     border: 6px solid var(--surface1);
 }
 .wallpapers-gallery-image.focused {
-    border: 6px solid var(--pink);
+    border: 6px solid var(--red);
 }
 .wifi-widget .icon {
     font-size: 17px;
@@ -287,7 +299,7 @@
 }
 .update-check-widget .widget-container.winget,
 .update-check-widget .widget-container.windows {
-    background: var(--blue);
+    background: var(--red);
     margin: 7px 2px 7px 2px;
     border-radius: 10px;
     border: 0px solid var(--sapphire);
@@ -321,6 +333,6 @@
     color: var(--surface1);
 }
 
-.active-window-widget .widget-container .label {
-    color: var(--overlay0);
-}
+/* .active-window-widget .widget-container .label { */
+/*     color: var(--); */
+/* } */
