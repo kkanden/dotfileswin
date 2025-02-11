@@ -7,7 +7,9 @@ alt + r                 : taskkill /f /im whkd.exe; Start-Process whkd -WindowSt
 # App shortcuts - these require shell to be pwsh / powershell
 # The apps will be focused if open, or launched if not open
 alt + b                 : powershell -NoProfile -ExecutionPolicy Bypass -File "$env:USERPROFILE\.config\focus_or_launch.ps1" -ProcessName "chrome" -LaunchCommand "chrome"
+alt + shift + b         : start chrome
 alt + t                 : powershell -NoProfile -ExecutionPolicy Bypass -File "$env:USERPROFILE\.config\focus_or_launch.ps1" -ProcessName "WindowsTerminal" -LaunchCommand "wt"
+alt + shift + t         : start wt
 alt + v                 : powershell -NoProfile -ExecutionPolicy Bypass -File "$env:USERPROFILE\.config\focus_or_launch.ps1" -ProcessName "spotify" -LaunchCommand "C:\Users\oliwia\AppData\Roaming\Spotify\Spotify.exe"
 alt + d                 : powershell -NoProfile -ExecutionPolicy Bypass -File "$env:USERPROFILE\.config\focus_or_launch.ps1" -ProcessName "Discord" -LaunchCommand "C:\Users\oliwia\AppData\Local\Discord\Update.exe" -LaunchArguments "--processStart Discord.exe"
 
