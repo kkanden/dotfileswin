@@ -107,6 +107,11 @@
             "kind": "Exe",
             "id": "PowerToys.EnvironmentVariables.exe",
             "matching_strategy": "Equals"
+        },
+        {
+            "kind": "Exe",
+            "id": "Flow.Launcher.exe",
+            "matching_strategy": "Equals"
         }
     ]
 }
