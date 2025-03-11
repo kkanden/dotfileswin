@@ -35,8 +35,16 @@ bars:
         widgets:
             left: ["weather", "active_window", "komorebi_workspaces"]
             center: ["clock"]
-            right: ["language", "media", "volume", "power_menu"]
+            right: ["language", "cava", "media", "volume", "power_menu"]
 widgets:
+    cava:
+        type: "yasb.cava.CavaWidget"
+        options:
+            framerate: 120
+            sleep_timer: 60
+            hide_empty: true
+            gradient: 0
+            foreground: "#898ea6"
     media:
         type: "yasb.media.MediaWidget"
         options:
