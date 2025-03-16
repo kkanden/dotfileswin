@@ -1,11 +1,9 @@
 {
     "$help": "https://aka.ms/terminal-documentation",
     "$schema": "https://aka.ms/terminal-profiles-schema",
-    "actions": 
-    [
+    "actions": [
         {
-            "command": 
-            {
+            "command": {
                 "action": "copy",
                 "singleLine": false
             },
@@ -24,8 +22,7 @@
             "id": "User.find"
         },
         {
-            "command": 
-            {
+            "command": {
                 "action": "splitPane",
                 "split": "auto",
                 "splitMode": "duplicate"
@@ -33,15 +30,13 @@
             "id": "User.splitPane.A6751878"
         },
         {
-            "command": 
-            {
+            "command": {
                 "action": "nextTab"
             },
             "id": "User.nextTab.0"
         },
         {
-            "command": 
-            {
+            "command": {
                 "action": "prevTab"
             },
             "id": "User.prevTab.0"
@@ -53,27 +48,26 @@
     "copyOnSelect": false,
     "defaultProfile": "{672f9ad0-5bf2-4f92-8d8c-4c55401c1fae}",
     "initialPosition": ",",
-    "keybindings": 
-    [
-        {
-            "id": "User.copy.644BA8F2",
-            "keys": "ctrl+c"
-        },
-        {
-            "id": null,
-            "keys": "ctrl+shift+tab"
-        },
+    "keybindings": [
         {
             "id": null,
             "keys": "ctrl+tab"
         },
         {
             "id": null,
-            "keys": "ctrl+alt+left"
+            "keys": "ctrl+shift+tab"
+        },
+        {
+            "id": "User.copy.644BA8F2",
+            "keys": "ctrl+c"
         },
         {
             "id": null,
             "keys": "alt+enter"
+        },
+        {
+            "id": null,
+            "keys": "ctrl+alt+left"
         },
         {
             "id": null,
@@ -185,23 +179,18 @@
         }
     ],
     "launchMode": "focus",
-    "newTabMenu": 
-    [
+    "newTabMenu": [
         {
             "type": "remainingProfiles"
         }
     ],
-    "profiles": 
-    {
-        "defaults": 
-        {
+    "profiles": {
+        "defaults": {
             "bellStyle": "none",
-            "colorScheme": "Kanagawa",
-            "font": 
-            {
+            "colorScheme": "KanagawaWave",
+            "font": {
                 "face": "JetBrainsMono Nerd Font",
-                "features": 
-                {
+                "features": {
                     "zero": 1
                 },
                 "weight": "normal"
@@ -211,13 +200,12 @@
             "scrollbarState": "hidden",
             "useAcrylic": true
         },
-        "list": 
-        [
+        "list": [
             {
                 "commandline": "Arch.exe",
                 "guid": "{672f9ad0-5bf2-4f92-8d8c-4c55401c1fae}",
                 "hidden": false,
-                "icon": "C:\\Users\\oliwia\\scoop\\apps\\archwsl\\current\\arch-linux.png",
+                "icon": "C:\\Users\\oliwia\\.config\\assets\\arch-linux.png",
                 "name": "Arch WSL",
                 "startingDirectory": "%USERPROFILE%",
                 "tabTitle": "Arch"
@@ -225,8 +213,7 @@
             {
                 "commandline": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe -NoLogo",
                 "elevate": false,
-                "font": 
-                {
+                "font": {
                     "face": "JetBrainsMono NF"
                 },
                 "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
@@ -294,33 +281,33 @@
             }
         ]
     },
-    "schemes": 
-    [
+    "schemes": [
         {
             "background": "#1F1F28",
-            "black": "#1F1F28",
-            "blue": "#658594",
-            "brightBlack": "#4E4E66",
+            "black": "#090618",
+            "blue": "#7E9CD8",
+            "brightBlack": "#727169",
             "brightBlue": "#7FB4CA",
-            "brightCyan": "#A3D4D5",
+            "brightCyan": "#7AA89F",
             "brightGreen": "#98BB6C",
-            "brightPurple": "#D27E99",
-            "brightRed": "#FF5D62",
+            "brightPurple": "#938AA9",
+            "brightRed": "#E82424",
             "brightWhite": "#DCD7BA",
             "brightYellow": "#E6C384",
-            "cursorColor": "#DCD7BA",
-            "cyan": "#9CABCA",
+            "cursorColor": "#C8C093",
+            "cyan": "#6A9589",
             "foreground": "#DCD7BA",
             "green": "#76946A",
-            "name": "Kanagawa",
+            "name": "KanagawaWave",
             "purple": "#957FB8",
-            "red": "#E82424",
-            "selectionBackground": "#2A2A37",
-            "white": "#DCD7BA",
-            "yellow": "#FF9E3B"
+            "red": "#C34043",
+            "selectionBackground": "#2D4F67",
+            "white": "#C8C093",
+            "yellow": "#C0A36E"
         }
     ],
     "showTabsInTitlebar": true,
     "themes": [],
     "useAcrylicInTabRow": false
 }
+
