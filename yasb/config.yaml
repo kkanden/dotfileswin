@@ -71,10 +71,12 @@ widgets:
         type: "yasb.clock.ClockWidget"
         options:
             label: "<span>\uf017</span> {%d/%m/%Y, %H:%M:%S}"
-            label_alt: "<span>\uf017</span> {%a, %d %b %H:%M:%S}"
             timezones: [] #Looking up time zone info from registry
+            calendar:
+                alignment: "center"
             callbacks:
-                on_left: "do_nothing"
+                on_left: "toggle_calendar"
+                on_right: "do_nothing"
     taskbar:
         type: "yasb.taskbar.TaskbarWidget"
         options:
@@ -147,15 +149,19 @@ widgets:
     weather:
         type: "yasb.weather.WeatherWidget"
         options:
-            label: "<span>{icon}</span> {conditions} {temp} ({min_temp};{max_temp}), {precip}"
-            label_alt: "<span>{icon}</span> {conditions} {temp} ({min_temp};{max_temp}), {precip}"
+            label: "<span>{icon}</span> {conditions} {temp} <span>\u2193</span> {min_temp} <span>\u2191</span> {max_temp}, {precip}"
             api_key: "3bf4cf9a7c3f40d6b31174128242807"
             update_interval: 600
             units: "metric"
             hide_decimal: true
             location: "Poland Wroclaw"
+            show_alerts: true
+            weather_card:
+                alignment: "center"
+                offset_left: 100
+                border_color: "#f38ba8"
             callbacks:
-                on_left: "do_nothing"
+                on_left: "toggle_card"
             icons:
                 sunnyDay: "\ue30d"
                 clearNight: "\ue32b"

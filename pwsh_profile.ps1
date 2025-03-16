@@ -18,8 +18,9 @@ Import-Module Terminal-Icons
 
 # EXTRA VARIABLES
 $csconf = "$env:C:\Program Files (x86)\Steam\steamapps\common\Counter-Strike Global Offensive\game\csgo\cfg"
-$Env:KOMOREBI_CONFIG_HOME = "$env:USERPROFILE\.config"
 $Env:XDG_CONFIG_HOME = "$env:USERPROFILE\.config"
+$Env:KOMOREBI_CONFIG_HOME = "$env:USERPROFILE\.config\komorebi"
+$Env:WHKD_CONFIG_HOME = "$env:USERPROFILE\.config\whkd"
 $Env:RIPGREP_CONFIG_PATH = "$env:USERPROFILE\.config\.ripgrep"
 
 # ALIASES
