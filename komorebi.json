@@ -35,7 +35,14 @@
                 },
                 {
                     "name": "II",
-                    "layout": "BSP"
+                    "layout": "BSP",
+                    "initial_workspace_rules": [
+                        {
+                            "kind": "Exe",
+                            "id": "WindowsTerminal.exe",
+                            "matching_strategy": "Equals"
+                        }
+                    ]
                 },
                 {
                     "name": "III",
