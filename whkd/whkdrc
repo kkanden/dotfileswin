@@ -2,16 +2,16 @@
 
 # Reload whkd configuration
 alt + r                 : taskkill /f /im whkd.exe; Start-Process whkd -WindowStyle hidden # if shell is pwsh / powershell
-# alt + shift + r         : komorebic stop; komorebic start --whkd
+alt + shift + r         : komorebic stop --whkd; komorebic start --whkd
 
 # App shortcuts - these require shell to be pwsh / powershell
 # The apps will be focused if open, or launched if not open
-alt + b                 : powershell -NoProfile -ExecutionPolicy Bypass -File "$env:USERPROFILE\.config\focus_or_launch.ps1" -ProcessName "chrome" -LaunchCommand "chrome"
-alt + shift + b         : start chrome
-alt + t                 : powershell -NoProfile -ExecutionPolicy Bypass -File "$env:USERPROFILE\.config\focus_or_launch.ps1" -ProcessName "WindowsTerminal" -LaunchCommand "wt"
-alt + shift + t         : start wt
-alt + v                 : powershell -NoProfile -ExecutionPolicy Bypass -File "$env:USERPROFILE\.config\focus_or_launch.ps1" -ProcessName "spotify" -LaunchCommand "C:\Users\oliwia\AppData\Roaming\Spotify\Spotify.exe"
-alt + d                 : powershell -NoProfile -ExecutionPolicy Bypass -File "$env:USERPROFILE\.config\focus_or_launch.ps1" -ProcessName "Discord" -LaunchCommand "C:\Users\oliwia\AppData\Local\Discord\Update.exe" -LaunchArguments "--processStart Discord.exe"
+alt + b                 : . "$env:USERPROFILE\.config\utils\focus_launch_browser.ps1"
+alt + shift + b         : . (. $("$env:USERPROFILE\.config\utils\get_default_browser.ps1")).BrowserPath
+alt + t                 : . "$env:USERPROFILE\.config\utils\focus_or_launch.ps1" -ProcessName "WindowsTerminal" -LaunchCommand "wt"
+alt + shift + t         : wt
+alt + v                 : . "$env:USERPROFILE\.config\utils\focus_or_launch.ps1" -ProcessName "spotify" -LaunchCommand "C:\Users\oliwia\AppData\Roaming\Spotify\Spotify.exe"
+alt + d                 : . "$env:USERPROFILE\.config\utils\focus_or_launch.ps1" -ProcessName "Discord" -LaunchCommand "C:\Users\oliwia\AppData\Local\Discord\Update.exe" -LaunchArguments "--processStart Discord.exe"
 
 alt + q                 : komorebic close
 alt + m                 : komorebic minimize
@@ -52,7 +52,7 @@ alt + f                 : komorebic toggle-monocle
 alt + shift + f         : komorebic toggle-maximize
 
 # Window manager options
-alt + shift + r         : komorebic retile
+# alt + shift + r         : komorebic retile
 alt + shift + p         : komorebic toggle-pause
 
 # Layouts
