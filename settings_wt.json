@@ -1,9 +1,11 @@
 {
     "$help": "https://aka.ms/terminal-documentation",
     "$schema": "https://aka.ms/terminal-profiles-schema",
-    "actions": [
+    "actions": 
+    [
         {
-            "command": {
+            "command": 
+            {
                 "action": "copy",
                 "singleLine": false
             },
@@ -22,7 +24,8 @@
             "id": "User.find"
         },
         {
-            "command": {
+            "command": 
+            {
                 "action": "splitPane",
                 "split": "auto",
                 "splitMode": "duplicate"
@@ -30,13 +33,15 @@
             "id": "User.splitPane.A6751878"
         },
         {
-            "command": {
+            "command": 
+            {
                 "action": "nextTab"
             },
             "id": "User.nextTab.0"
         },
         {
-            "command": {
+            "command": 
+            {
                 "action": "prevTab"
             },
             "id": "User.prevTab.0"
@@ -48,7 +53,8 @@
     "copyOnSelect": false,
     "defaultProfile": "{672f9ad0-5bf2-4f92-8d8c-4c55401c1fae}",
     "initialPosition": ",",
-    "keybindings": [
+    "keybindings": 
+    [
         {
             "id": null,
             "keys": "ctrl+tab"
@@ -179,18 +185,23 @@
         }
     ],
     "launchMode": "focus",
-    "newTabMenu": [
+    "newTabMenu": 
+    [
         {
             "type": "remainingProfiles"
         }
     ],
-    "profiles": {
-        "defaults": {
+    "profiles": 
+    {
+        "defaults": 
+        {
             "bellStyle": "none",
             "colorScheme": "KanagawaWave",
-            "font": {
+            "font": 
+            {
                 "face": "JetBrainsMono Nerd Font",
-                "features": {
+                "features": 
+                {
                     "zero": 1
                 },
                 "weight": "normal"
@@ -200,7 +211,8 @@
             "scrollbarState": "hidden",
             "useAcrylic": true
         },
-        "list": [
+        "list": 
+        [
             {
                 "commandline": "Arch.exe",
                 "guid": "{672f9ad0-5bf2-4f92-8d8c-4c55401c1fae}",
@@ -211,9 +223,30 @@
                 "tabTitle": "Arch"
             },
             {
+                "altGrAliasing": true,
+                "antialiasingMode": "grayscale",
+                "closeOnExit": "automatic",
+                "commandline": "C:\\Users\\oliwia\\scoop\\shims\\pwsh.exe -NoLogo",
+                "cursorShape": "bar",
+                "elevate": false,
+                "font": 
+                {
+                    "face": "JetBrainsMono NF",
+                    "size": 12
+                },
+                "guid": "{03a8776d-3a64-4559-9af0-18a3a95e6516}",
+                "hidden": false,
+                "historySize": 9001,
+                "icon": "C:\\Program Files\\PowerShell\\7\\assets\\Powershell_black.ico",
+                "name": "PowerShell 7",
+                "snapOnInput": true,
+                "startingDirectory": "%USERPROFILE%"
+            },
+            {
                 "commandline": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe -NoLogo",
                 "elevate": false,
-                "font": {
+                "font": 
+                {
                     "face": "JetBrainsMono NF"
                 },
                 "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
@@ -227,61 +260,14 @@
                 "source": "CanonicalGroupLimited.Ubuntu_79rhkp1fndgsc"
             },
             {
-                "guid": "{f97ed5b1-7b93-5ab0-a190-210cf86ff352}",
-                "hidden": false,
-                "name": "Developer Command Prompt for VS 2022",
-                "source": "Windows.Terminal.VisualStudio"
-            },
-            {
-                "guid": "{94b70521-f6cc-5d4a-9220-d9cfcd079a35}",
-                "hidden": true,
-                "name": "Developer PowerShell for VS 2022",
-                "source": "Windows.Terminal.VisualStudio"
-            },
-            {
                 "guid": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
                 "hidden": false,
                 "name": "Command Prompt"
-            },
-            {
-                "guid": "{2f9391fe-f6b1-5afc-8980-f029f7f0cadc}",
-                "hidden": true,
-                "name": "Developer Command Prompt for VS 2022",
-                "source": "Windows.Terminal.VisualStudio"
-            },
-            {
-                "guid": "{0e5d13de-640a-5a4c-9d29-deb12f039189}",
-                "hidden": true,
-                "name": "Developer PowerShell for VS 2022",
-                "source": "Windows.Terminal.VisualStudio"
-            },
-            {
-                "guid": "{39e9f82e-d29a-5869-b8b6-b368b126a01d}",
-                "hidden": true,
-                "name": "Developer Command Prompt for VS 2022 (2)",
-                "source": "Windows.Terminal.VisualStudio"
-            },
-            {
-                "guid": "{44d9381e-29ba-553b-9a8c-520bd768f800}",
-                "hidden": true,
-                "name": "Developer PowerShell for VS 2022 (2)",
-                "source": "Windows.Terminal.VisualStudio"
-            },
-            {
-                "guid": "{a5a97cb8-8961-5535-816d-772efe0c6a3f}",
-                "hidden": false,
-                "name": "Arch",
-                "source": "Windows.Terminal.Wsl"
-            },
-            {
-                "guid": "{2c4de342-38b7-51cf-b940-2309a097f518}",
-                "hidden": false,
-                "name": "Ubuntu",
-                "source": "Windows.Terminal.Wsl"
             }
         ]
     },
-    "schemes": [
+    "schemes": 
+    [
         {
             "background": "#1F1F28",
             "black": "#090618",
@@ -310,4 +296,3 @@
     "themes": [],
     "useAcrylicInTabRow": false
 }
-
