@@ -2,12 +2,19 @@ $startTime = Get-Date
 # MODULES 
 
 ## omp
-oh-my-posh init pwsh --config ~/.config/.my-omp.omp.json | Invoke-Expression
+oh-my-posh init pwsh --config "$env:USERPROFILE/.config/.my-omp.omp.json" | Invoke-Expression
 
 ## PSReadLine - autocompletion
 Import-Module PSReadLine
-Set-PSReadLineOption -PredictionSource History
+Import-Module CompletionPredictor # used for IntelliSense completion
+Set-PSReadLineOption -PredictionSource HistoryAndPlugin
 Set-PSReadLineOption -HistorySearchCursorMovesToEnd
+Set-PSReadLineOption -PredictionViewStyle ListView
+
+Set-PSReadLineKeyhandler -Chord "Ctrl+b" -Function AcceptSuggestion
+Set-PSReadLineKeyhandler -Chord "Ctrl+n" -Function HistorySearchForward
+Set-PSReadLineKeyhandler -Chord "Ctrl+p" -Function HistorySearchBackward
+
 
 ## Fzf (Import the fuzzy finder and set a shortcut key to begin searching)
 Import-Module PSFzf
@@ -64,6 +71,7 @@ function which ($command) {
 Invoke-Expression (& { (zoxide init powershell | Out-String) })
 
 
+$version = $PSVersionTable.PSVersion
 $endTime = Get-Date
 $elapsedTime = $endTime - $startTime
-"took $($elapsedTime.TotalMilliseconds) ms" | cowsay | meow
+"PowerShell $($version.Major).$($version.Minor).$($version.Patch) took $($elapsedTime.TotalMilliseconds) ms" | cowsay | meow
