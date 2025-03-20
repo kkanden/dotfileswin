@@ -33,7 +33,7 @@ bars:
             bottom: 0
             right: 0
         widgets:
-            left: ["weather", "active_window", "komorebi_workspaces"]
+            left: ["weather", "komorebi_workspaces", "active_window"]
             center: ["clock"]
             right: ["language", "cava", "media", "volume", "power_menu"]
 widgets:
@@ -48,17 +48,15 @@ widgets:
     media:
         type: "yasb.media.MediaWidget"
         options:
-            label: "{artist} - {title}"
-            label_alt: "<span>\uf001</span> {artist} - {title}"
+            label: "<span>\uf001</span> {artist} - {title}"
             hide_empty: true
             max_field_size:
                 label: 20
             show_thumbnail: true
-            controls_only: false
-            controls_left: true
+            controls_hide: true
             thumbnail_alpha: 50
             thumbnail_padding: 70
-            thumbnail_corner_radius: 12
+            thumbnail_corner_radius: 5
             icons:
                 prev_track: "\ue892"
                 next_track: "\ue893"
@@ -149,7 +147,7 @@ widgets:
     weather:
         type: "yasb.weather.WeatherWidget"
         options:
-            label: "<span>{icon}</span> {conditions} {temp} <span>\u2193</span> {min_temp} <span>\u2191</span> {max_temp}, {precip}"
+            label: "<span>{icon}</span> {conditions} {temp} \u00b7 \u2193 {min_temp} \u2191 {max_temp} \u00b7 {precip}"
             api_key: "3bf4cf9a7c3f40d6b31174128242807"
             update_interval: 600
             units: "metric"
@@ -158,7 +156,7 @@ widgets:
             show_alerts: true
             weather_card:
                 alignment: "center"
-                offset_left: 100
+                offset_left: 120
                 border_color: "#f38ba8"
             callbacks:
                 on_left: "toggle_card"
