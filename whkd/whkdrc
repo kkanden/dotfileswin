@@ -13,6 +13,8 @@ alt + shift + t         : wt
 alt + v                 : . "$env:USERPROFILE\.config\utils\focus_or_launch.ps1" -ProcessName "spotify" -LaunchCommand "C:\Users\oliwia\AppData\Roaming\Spotify\Spotify.exe"
 alt + d                 : . "$env:USERPROFILE\.config\utils\focus_or_launch.ps1" -ProcessName "Discord" -LaunchCommand "C:\Users\oliwia\AppData\Local\Discord\Update.exe" -LaunchArguments "--processStart Discord.exe"
 
+alt + y                 : yasbc stop; yasbc start
+
 alt + q                 : komorebic close
 alt + m                 : komorebic minimize
 
@@ -57,7 +59,7 @@ alt + shift + p         : komorebic toggle-pause
 
 # Layouts
 alt + x                 : komorebic flip-layout horizontal
-alt + y                 : komorebic flip-layout vertical
+# alt + y                 : komorebic flip-layout vertical
 
 # Workspaces
 alt + 1                 : komorebic focus-workspace 0
