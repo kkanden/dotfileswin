@@ -56,24 +56,24 @@
     "keybindings": 
     [
         {
-            "id": null,
-            "keys": "ctrl+tab"
+            "id": "User.copy.644BA8F2",
+            "keys": "ctrl+c"
         },
         {
             "id": null,
             "keys": "ctrl+shift+tab"
         },
         {
-            "id": "User.copy.644BA8F2",
-            "keys": "ctrl+c"
-        },
-        {
             "id": null,
-            "keys": "alt+enter"
+            "keys": "ctrl+tab"
         },
         {
             "id": null,
             "keys": "ctrl+alt+left"
+        },
+        {
+            "id": null,
+            "keys": "alt+enter"
         },
         {
             "id": null,
@@ -214,7 +214,7 @@
         "list": 
         [
             {
-                "commandline": "Arch.exe",
+                "commandline": "C:\\Users\\oliwia\\scoop\\shims\\arch.exe",
                 "guid": "{672f9ad0-5bf2-4f92-8d8c-4c55401c1fae}",
                 "hidden": false,
                 "icon": "C:\\Users\\oliwia\\.config\\assets\\arch-linux.png",
@@ -237,7 +237,7 @@
                 "guid": "{03a8776d-3a64-4559-9af0-18a3a95e6516}",
                 "hidden": false,
                 "historySize": 9001,
-                "icon": "C:\\Program Files\\PowerShell\\7\\assets\\Powershell_black.ico",
+                "icon": "C:\\Users\\oliwia\\Downloads\\Powershell.png",
                 "name": "PowerShell 7",
                 "snapOnInput": true,
                 "startingDirectory": "%USERPROFILE%"
@@ -251,7 +251,7 @@
                 },
                 "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
                 "hidden": false,
-                "name": "Windows PowerShell"
+                "name": "PowerShell 5"
             },
             {
                 "guid": "{51855cb2-8cce-5362-8f54-464b92b32386}",
