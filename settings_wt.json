@@ -42,7 +42,6 @@
             "id": "User.prevTab.0"
         }
     ],
-    "startupActions": "; new-tab -p \"PowerShell 7\"; focus-tab --previous",
     "alwaysShowTabs": true,
     "confirmCloseAllTabs": false,
     "copyFormatting": "none",
@@ -51,24 +50,24 @@
     "initialPosition": ",",
     "keybindings": [
         {
-            "id": "User.copy.644BA8F2",
-            "keys": "ctrl+c"
+            "id": null,
+            "keys": "ctrl+tab"
         },
         {
             "id": null,
             "keys": "ctrl+shift+tab"
         },
         {
-            "id": null,
-            "keys": "ctrl+tab"
-        },
-        {
-            "id": null,
-            "keys": "ctrl+alt+left"
+            "id": "User.copy.644BA8F2",
+            "keys": "ctrl+c"
         },
         {
             "id": null,
             "keys": "alt+enter"
+        },
+        {
+            "id": null,
+            "keys": "ctrl+alt+left"
         },
         {
             "id": null,
@@ -279,6 +278,8 @@
         }
     ],
     "showTabsInTitlebar": true,
+    "startOnUserLogin": true,
+    "startupActions": "; new-tab -p \"PowerShell 7\"; focus-tab --previous",
     "themes": [],
     "useAcrylicInTabRow": false
 }
