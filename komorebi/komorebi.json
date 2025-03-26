@@ -32,6 +32,20 @@
         {
             "workspaces": [
                 {
+<<<<<<< HEAD
+=======
+                    "name": "terminal",
+                    "layout": "VerticalStack",
+                    "initial_workspace_rules": [
+                        {
+                            "kind": "Exe",
+                            "id": "WindowsTerminal.exe",
+                            "matching_strategy": "Equals"
+                        }
+                    ]
+                },
+                {
+>>>>>>> 122932c (komorebi/yasb: change configuration to be work-specific)
                     "name": "browser",
                     "layout": "VerticalStack",
                     "initial_workspace_rules": [
