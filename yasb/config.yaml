@@ -98,7 +98,7 @@ widgets:
             label_workspace_populated_btn: "\udb81\udc3e"
             label_default_name: "{index}"
             label_zero_index: true
-            hide_empty_workspaces: true
+            hide_empty_workspaces: false
             hide_if_offline: true
             animation: true
             container_padding:
