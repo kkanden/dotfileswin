@@ -32,6 +32,7 @@
         {
             "workspaces": [
                 {
+                {
                     "name": "browser",
                     "layout": "VerticalStack",
                     "initial_workspace_rules": [
