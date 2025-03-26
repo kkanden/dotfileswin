@@ -26,8 +26,7 @@
         "mode": "Never"
     },
     "display_index_preferences": {
-        "0": "PHL0942-5&28220b11&0&UID168195",
-        "1": "SAM0B6B-5&28220b11&0&UID168192"
+        "0": "IVO8CBE-4&2714e9ea&0&UID8388688"
     },
     "monitors": [
         {
@@ -39,6 +38,11 @@
                         {
                             "kind": "Exe",
                             "id": "zen.exe",
+                            "matching_strategy": "Equals"
+                        },
+                        {
+                            "kind": "Exe",
+                            "id": "msedge.exe",
                             "matching_strategy": "Equals"
                         }
                     ]
@@ -55,27 +59,26 @@
                     ]
                 },
                 {
-                    "name": "mail",
+                    "name": "teams",
                     "layout": "VerticalStack",
                     "initial_workspace_rules": [
                         {
                             "kind": "Exe",
-                            "id": "olk.exe",
+                            "id": "ms-teams.exe",
                             "matching_strategy": "Equals"
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "workspaces": [
-                {
-                    "name": "browser",
-                    "layout": "VerticalStack"
                 },
                 {
-                    "name": "placeholder",
-                    "layout": "VerticalStack"
+                    "name": "outlook",
+                    "layout": "VerticalStack",
+                    "initial_workspace_rules": [
+                        {
+                            "kind": "Exe",
+                            "id": "OUTLOOK.EXE",
+                            "matching_strategy": "Equals"
+                        }
+                    ]
                 }
             ]
         }
@@ -139,16 +142,6 @@
         {
             "kind": "Exe",
             "id": "Flow.Launcher.exe",
-            "matching_strategy": "Equals"
-        },
-        {
-            "kind": "Exe",
-            "id": "kdeconnect-app.exe",
-            "matching_strategy": "Equals"
-        },
-        {
-            "kind": "Exe",
-            "id": "Photos.exe",
             "matching_strategy": "Equals"
         }
     ]
