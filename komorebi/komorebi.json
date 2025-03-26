@@ -27,53 +27,9 @@
         "mode": "Never"
     },
     "display_index_preferences": {
-        "0": "PHL0942-5&28220b11&0&UID168195",
-        "1": "SAM0B6B-5&28220b11&0&UID168192",
-        "2": "IVO8CBE-4&2714e9ea&0&UID8388688"
+        "0": "IVO8CBE-4&2714e9ea&0&UID8388688"
     },
     "monitors": [
-        {
-            "workspaces": [
-                {
-                    "name": "browser",
-                    "layout": "VerticalStack",
-                    "initial_workspace_rules": [
-                        {
-                            "kind": "Exe",
-                            "id": "zen.exe",
-                            "matching_strategy": "Equals"
-                        }
-                    ]
-                },
-                {
-                    "name": "terminal",
-                    "layout": "VerticalStack",
-                    "initial_workspace_rules": [
-                        {
-                            "kind": "Exe",
-                            "id": "WindowsTerminal.exe",
-                            "matching_strategy": "Equals"
-                        }
-                    ]
-                },
-                {
-                    "name": "placeholder",
-                    "layout": "VerticalStack"
-                }
-            ]
-        },
-        {
-            "workspaces": [
-                {
-                    "name": "browser",
-                    "layout": "VerticalStack"
-                },
-                {
-                    "name": "placeholder",
-                    "layout": "VerticalStack"
-                }
-            ]
-        },
         {
             "workspaces": [
                 {
