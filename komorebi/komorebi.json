@@ -26,16 +26,28 @@
     "stackbar": {
         "mode": "Never"
     },
+    "display_index_preferences": {
+        "0": "PHL0942-5&28220b11&0&UID168195",
+        "1": "SAM0B6B-5&28220b11&0&UID168192",
+        "2": "IVO8CBE-4&2714e9ea&0&UID8388688"
+    },
     "monitors": [
         {
             "workspaces": [
                 {
-                    "name": "I",
-                    "layout": "BSP"
+                    "name": "browser",
+                    "layout": "VerticalStack",
+                    "initial_workspace_rules": [
+                        {
+                            "kind": "Exe",
+                            "id": "zen.exe",
+                            "matching_strategy": "Equals"
+                        }
+                    ]
                 },
                 {
-                    "name": "II",
-                    "layout": "BSP",
+                    "name": "terminal",
+                    "layout": "VerticalStack",
                     "initial_workspace_rules": [
                         {
                             "kind": "Exe",
@@ -45,16 +57,73 @@
                     ]
                 },
                 {
-                    "name": "III",
-                    "layout": "BSP"
+                    "name": "placeholder",
+                    "layout": "VerticalStack"
+                }
+            ]
+        },
+        {
+            "workspaces": [
+                {
+                    "name": "browser",
+                    "layout": "VerticalStack"
                 },
                 {
-                    "name": "IV",
-                    "layout": "BSP"
+                    "name": "placeholder",
+                    "layout": "VerticalStack"
+                }
+            ]
+        },
+        {
+            "workspaces": [
+                {
+                    "name": "terminal",
+                    "layout": "VerticalStack",
+                    "initial_workspace_rules": [
+                        {
+                            "kind": "Exe",
+                            "id": "WindowsTerminal.exe",
+                            "matching_strategy": "Equals"
+                        }
+                    ]
                 },
                 {
-                    "name": "V",
-                    "layout": "BSP"
+                    "name": "browser",
+                    "layout": "VerticalStack",
+                    "initial_workspace_rules": [
+                        {
+                            "kind": "Exe",
+                            "id": "zen.exe",
+                            "matching_strategy": "Equals"
+                        },
+                        {
+                            "kind": "Exe",
+                            "id": "msedge.exe",
+                            "matching_strategy": "Equals"
+                        }
+                    ]
+                },
+                {
+                    "name": "teams",
+                    "layout": "VerticalStack",
+                    "initial_workspace_rules": [
+                        {
+                            "kind": "Exe",
+                            "id": "ms-teams.exe",
+                            "matching_strategy": "Equals"
+                        }
+                    ]
+                },
+                {
+                    "name": "outlook",
+                    "layout": "VerticalStack",
+                    "initial_workspace_rules": [
+                        {
+                            "kind": "Exe",
+                            "id": "OUTLOOK.EXE",
+                            "matching_strategy": "Equals"
+                        }
+                    ]
                 }
             ]
         }
