@@ -1,9 +1,11 @@
 {
     "$help": "https://aka.ms/terminal-documentation",
     "$schema": "https://aka.ms/terminal-profiles-schema",
-    "actions": [
+    "actions": 
+    [
         {
-            "command": {
+            "command": 
+            {
                 "action": "copy",
                 "singleLine": false
             },
@@ -22,7 +24,8 @@
             "id": "User.find"
         },
         {
-            "command": {
+            "command": 
+            {
                 "action": "splitPane",
                 "split": "auto",
                 "splitMode": "duplicate"
@@ -30,13 +33,15 @@
             "id": "User.splitPane.A6751878"
         },
         {
-            "command": {
+            "command": 
+            {
                 "action": "nextTab"
             },
             "id": "User.nextTab.0"
         },
         {
-            "command": {
+            "command": 
+            {
                 "action": "prevTab"
             },
             "id": "User.prevTab.0"
@@ -48,7 +53,8 @@
     "copyOnSelect": false,
     "defaultProfile": "{672f9ad0-5bf2-4f92-8d8c-4c55401c1fae}",
     "initialPosition": ",",
-    "keybindings": [
+    "keybindings": 
+    [
         {
             "id": null,
             "keys": "ctrl+tab"
@@ -179,28 +185,34 @@
         }
     ],
     "launchMode": "focus",
-    "newTabMenu": [
+    "newTabMenu": 
+    [
         {
             "type": "remainingProfiles"
         }
     ],
-    "profiles": {
-        "defaults": {
+    "profiles": 
+    {
+        "defaults": 
+        {
             "bellStyle": "none",
-            "colorScheme": "KanagawaWave",
-            "font": {
+            "colorScheme": "GruvboxMaterialSoftDark",
+            "font": 
+            {
                 "face": "JetBrainsMono Nerd Font",
-                "features": {
+                "features": 
+                {
                     "zero": 1
                 },
                 "weight": "normal"
             },
-            "opacity": 80,
+            "opacity": 100,
             "padding": "0",
             "scrollbarState": "hidden",
-            "useAcrylic": true
+            "useAcrylic": false
         },
-        "list": [
+        "list": 
+        [
             {
                 "commandline": "C:\\Users\\oliwia\\scoop\\shims\\arch.exe",
                 "guid": "{672f9ad0-5bf2-4f92-8d8c-4c55401c1fae}",
@@ -217,7 +229,8 @@
                 "commandline": "C:\\Users\\oliwia\\scoop\\shims\\pwsh.exe -NoLogo",
                 "cursorShape": "bar",
                 "elevate": false,
-                "font": {
+                "font": 
+                {
                     "face": "JetBrainsMono NF",
                     "size": 12
                 },
@@ -232,7 +245,8 @@
             {
                 "commandline": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe -NoLogo",
                 "elevate": false,
-                "font": {
+                "font": 
+                {
                     "face": "JetBrainsMono NF"
                 },
                 "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
@@ -252,7 +266,146 @@
             }
         ]
     },
-    "schemes": [
+    "schemes": 
+    [
+        {
+            "background": "#1D2021",
+            "black": "#665C54",
+            "blue": "#7DAEA3",
+            "brightBlack": "#928374",
+            "brightBlue": "#7DAEA3",
+            "brightCyan": "#89B482",
+            "brightGreen": "#A9B665",
+            "brightPurple": "#D3869B",
+            "brightRed": "#EA6962",
+            "brightWhite": "#D4BE98",
+            "brightYellow": "#D8A657",
+            "cursorColor": "#FFFFFF",
+            "cyan": "#89B482",
+            "foreground": "#D4BE98",
+            "green": "#A9B665",
+            "name": "GruvboxMaterialHardDark",
+            "purple": "#D3869B",
+            "red": "#EA6962",
+            "selectionBackground": "#FFFFFF",
+            "white": "#D4BE98",
+            "yellow": "#D8A657"
+        },
+        {
+            "background": "#F9F5D7",
+            "black": "#504945",
+            "blue": "#45707A",
+            "brightBlack": "#504945",
+            "brightBlue": "#45707A",
+            "brightCyan": "#4C7A5D",
+            "brightGreen": "#6C782E",
+            "brightPurple": "#945E80",
+            "brightRed": "#C14A4A",
+            "brightWhite": "#D4BE98",
+            "brightYellow": "#B47109",
+            "cursorColor": "#FFFFFF",
+            "cyan": "#4C7A5D",
+            "foreground": "#654735",
+            "green": "#6C782E",
+            "name": "GruvboxMaterialHardLight",
+            "purple": "#945E80",
+            "red": "#C14A4A",
+            "selectionBackground": "#FFFFFF",
+            "white": "#D4BE98",
+            "yellow": "#B47109"
+        },
+        {
+            "background": "#282828",
+            "black": "#665C54",
+            "blue": "#7DAEA3",
+            "brightBlack": "#928374",
+            "brightBlue": "#7DAEA3",
+            "brightCyan": "#89B482",
+            "brightGreen": "#A9B665",
+            "brightPurple": "#D3869B",
+            "brightRed": "#EA6962",
+            "brightWhite": "#D4BE98",
+            "brightYellow": "#D8A657",
+            "cursorColor": "#FFFFFF",
+            "cyan": "#89B482",
+            "foreground": "#D4BE98",
+            "green": "#A9B665",
+            "name": "GruvboxMaterialMediumDark",
+            "purple": "#D3869B",
+            "red": "#EA6962",
+            "selectionBackground": "#FFFFFF",
+            "white": "#D4BE98",
+            "yellow": "#D8A657"
+        },
+        {
+            "background": "#FBF1C7",
+            "black": "#504945",
+            "blue": "#45707A",
+            "brightBlack": "#504945",
+            "brightBlue": "#45707A",
+            "brightCyan": "#4C7A5D",
+            "brightGreen": "#6C782E",
+            "brightPurple": "#945E80",
+            "brightRed": "#C14A4A",
+            "brightWhite": "#D4BE98",
+            "brightYellow": "#B47109",
+            "cursorColor": "#FFFFFF",
+            "cyan": "#4C7A5D",
+            "foreground": "#654735",
+            "green": "#6C782E",
+            "name": "GruvboxMaterialMediumLight",
+            "purple": "#945E80",
+            "red": "#C14A4A",
+            "selectionBackground": "#FFFFFF",
+            "white": "#D4BE98",
+            "yellow": "#B47109"
+        },
+        {
+            "background": "#32302F",
+            "black": "#665C54",
+            "blue": "#7DAEA3",
+            "brightBlack": "#928374",
+            "brightBlue": "#7DAEA3",
+            "brightCyan": "#89B482",
+            "brightGreen": "#A9B665",
+            "brightPurple": "#D3869B",
+            "brightRed": "#EA6962",
+            "brightWhite": "#D4BE98",
+            "brightYellow": "#D8A657",
+            "cursorColor": "#FFFFFF",
+            "cyan": "#89B482",
+            "foreground": "#D4BE98",
+            "green": "#A9B665",
+            "name": "GruvboxMaterialSoftDark",
+            "purple": "#D3869B",
+            "red": "#EA6962",
+            "selectionBackground": "#FFFFFF",
+            "white": "#D4BE98",
+            "yellow": "#D8A657"
+        },
+        {
+            "background": "#F2E5BC",
+            "black": "#504945",
+            "blue": "#45707A",
+            "brightBlack": "#504945",
+            "brightBlue": "#45707A",
+            "brightCyan": "#4C7A5D",
+            "brightGreen": "#6C782E",
+            "brightPurple": "#945E80",
+            "brightRed": "#C14A4A",
+            "brightWhite": "#D4BE98",
+            "brightYellow": "#B47109",
+            "cursorColor": "#FFFFFF",
+            "cyan": "#4C7A5D",
+            "foreground": "#654735",
+            "green": "#6C782E",
+            "name": "GruvboxMaterialSoftLight",
+            "purple": "#945E80",
+            "red": "#C14A4A",
+            "selectionBackground": "#FFFFFF",
+            "white": "#D4BE98",
+            "yellow": "#B47109"
+        },
         {
             "background": "#1F1F28",
             "black": "#090618",
@@ -278,6 +431,7 @@
         }
     ],
     "showTabsInTitlebar": true,
+    "showTerminalTitleInTitlebar": false,
     "startOnUserLogin": true,
     "startupActions": "; new-tab -p \"PowerShell 7\"; focus-tab --previous",
     "themes": [],

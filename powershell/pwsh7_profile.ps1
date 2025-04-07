@@ -2,7 +2,7 @@ $startTime = Get-Date
 # MODULES 
 
 ## omp
-oh-my-posh init pwsh --config "$env:USERPROFILE/.config/.my-omp.omp.json" | Invoke-Expression
+oh-my-posh init pwsh --config "$env:USERPROFILE/.config/oh-my-posh/omp-gruvbox-material.json" | Invoke-Expression
 
 ## PSReadLine - autocompletion
 Import-Module PSReadLine
