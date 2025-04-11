@@ -58,7 +58,7 @@ widgets:
             hide_empty: true
             max_field_size:
                 label: 20
-            show_thumbnail: false
+            show_thumbnail: true
             controls_hide: true
             thumbnail_alpha: 50
             thumbnail_padding: 70
