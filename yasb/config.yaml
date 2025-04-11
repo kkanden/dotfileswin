@@ -53,6 +53,7 @@ widgets:
             max_field_size:
                 label: 20
             show_thumbnail: true
+            controls_hide: true
             thumbnail_alpha: 50
             thumbnail_padding: 70
             thumbnail_corner_radius: 5
