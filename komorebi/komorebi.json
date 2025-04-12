@@ -32,17 +32,6 @@
         {
             "workspaces": [
                 {
-                    "name": "terminal",
-                    "layout": "VerticalStack",
-                    "initial_workspace_rules": [
-                        {
-                            "kind": "Exe",
-                            "id": "WindowsTerminal.exe",
-                            "matching_strategy": "Equals"
-                        }
-                    ]
-                },
-                {
                     "name": "browser",
                     "layout": "VerticalStack",
                     "initial_workspace_rules": [
@@ -54,6 +43,17 @@
                         {
                             "kind": "Exe",
                             "id": "msedge.exe",
+                            "matching_strategy": "Equals"
+                        }
+                    ]
+                },
+                {
+                    "name": "terminal",
+                    "layout": "VerticalStack",
+                    "initial_workspace_rules": [
+                        {
+                            "kind": "Exe",
+                            "id": "WindowsTerminal.exe",
                             "matching_strategy": "Equals"
                         }
                     ]
