@@ -138,6 +138,11 @@
             "kind": "Exe",
             "id": "kdeconnect-app.exe",
             "matching_strategy": "Equals"
+        },
+        {
+            "kind": "Exe",
+            "id": "Photos.exe",
+            "matching_strategy": "Equals"
         }
     ]
 }
