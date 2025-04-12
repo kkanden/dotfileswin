@@ -6,14 +6,15 @@
     "default_workspace_padding": 0,
     "default_container_padding": 3,
     "border": true,
-    "border_width": 3,
-    "border_offset": -1,
+    "border_width": 2,
+    "border_offset": 0,
     "border_style": "Square",
     "border_colours": {
-        "single": "#e9b143",
-        "monocle": "#af2528",
-        "unfocused": "#e0e9d3",
-        "stack": "#266b79"
+        "single": "#f38ba8",
+        "monocle": "#cba6f7",
+        "unfocused": "#cdd6f4",
+        "stack": "#74c7ec",
+        "floating": "#a6e3a1"
     },
     "mouse_follows_focus": false,
     "animation": {
