@@ -32,8 +32,6 @@
         {
             "workspaces": [
                 {
-<<<<<<< HEAD
-=======
                     "name": "terminal",
                     "layout": "VerticalStack",
                     "initial_workspace_rules": [
@@ -45,7 +43,6 @@
                     ]
                 },
                 {
->>>>>>> 122932c (komorebi/yasb: change configuration to be work-specific)
                     "name": "browser",
                     "layout": "VerticalStack",
                     "initial_workspace_rules": [
