@@ -68,8 +68,27 @@ widgets:
                 next_track: "\ue893"
                 play: "\ue768"
                 pause: "\ue769"
+            media_menu:
+                blur: false
+                round_corners: true
+                round_corners_type: "normal"
+                border_color: "system"
+                alignment: "right"
+                direction: "down"
+                offset_top: 6
+                offset_left: 0
+                thumbnail_corner_radius: 8
+                thumbnail_size: 120
+                max_title_size: 80
+                max_artist_size: 20
+                show_source: false
+            media_menu_icons:
+                play: "\ue768"
+                pause: "\ue769"
+                prev_track: "\ue892"
+                next_track: "\ue893"
             callbacks:
-                on_left: "do_nothing"
+                on_left: "toggle_media_menu"
 
     clock:
         type: "yasb.clock.ClockWidget"

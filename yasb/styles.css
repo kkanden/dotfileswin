@@ -66,7 +66,7 @@
 /* CALENDAR */
 
 .calendar {
-    background-color: var(--bg_dim);
+    background-color: var(--background);
     border-radius: 6px;
     border: 1px solid var(--grey1);
 }
@@ -214,10 +214,15 @@
  
 /* Weather Card*/
 
+.weather-card {
+    background-color: var(--background);
+    border: 1px solid var(--grey1);
+    border-radius: 8px;
+}
 .weather-card-today {
     border: 1px solid var(--grey1);
     border-radius: 8px;
-    background-color: var(--background);
+    background-color: var(--bg_dim);
 }
 
 .weather-card-today .label {
@@ -229,7 +234,7 @@
     font-weight: 700;
 }
 
-.weather-card-today .label.arert {
+.weather-card-today .label.alert {
     font-size: 12px;
     font-weight: 700;
     background-color: rgba(247, 199, 42, 0.05);
@@ -272,6 +277,103 @@
     color: var(--surface1);
     font-size: 12px;
     background-color: rgba(0, 0, 0, 0);
+}
+
+.media-menu {
+    border: 1px solid var(--grey1);
+    border-radius: 8px;
+    background-color: var(--background);
+    min-width: 420px;
+    max-width: 420px;
+}
+.media-menu .title,
+.media-menu .artist,
+.media-menu .source {
+    font-size: 20px;
+    font-weight: 600;
+    margin-left: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.media-menu .title {
+    font-weight: 900;
+}
+.media-menu .artist {
+    font-size: 16px;
+    color: var(--grey0)
+}
+.media-menu .source {
+    font-size: 11px;
+    color: #000;
+    font-weight: normal;
+    border-radius: 3px;
+    background-color: #bac2de;
+    padding: 2px 4px;
+
+}
+
+.media-menu .source.spotify {
+    background-color: #199143;
+    color: #ffffff;
+}
+
+.media-menu .btn {
+    font-family: "Segoe Fluent Icons";
+    font-size: 14px;
+    font-weight: 400;
+    margin: 10px 2px 0px 2px;
+    min-width: 40px;
+    max-width: 40px;
+    min-height: 40px;
+    max-height: 40px;
+    border-radius: 20px;
+}
+.media-menu .btn.prev {
+    margin-left: 10px;
+}
+.media-menu .btn:hover {
+    color: white;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+.media-menu .btn.play {
+    background-color: rgba(255, 255, 255, 0.1);
+    font-size: 20px
+}
+.media-menu .btn.disabled:hover,
+.media-menu .btn.disabled {
+    color: #4e525c;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.media-menu .playback-time {
+    font-size: 13px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--grey2);
+    margin-top: 20px;
+    min-width: 100px;
+}
+.media-menu .progress-slider {
+    height: 10px;
+    margin: 5px 4px;
+    border-radius: 3px;
+}
+.media-menu .progress-slider::groove {
+    background: transparent;
+    height: 2px;
+    border-radius: 3px;
+    background: rgba(255, 255, 255, 0.1);
+
+}
+.media-menu .progress-slider::groove:hover {
+    background: transparent;
+    height: 6px;
+    border-radius: 3px;
+    background: rgba(255, 255, 255, 0.2);
+}
+.media-menu .progress-slider::sub-page {
+    background: var(--accent);
+    border-radius: 3px;
+    height: 4px;
 }
 
 /* VOLUME */
