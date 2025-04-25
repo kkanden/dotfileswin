@@ -55,8 +55,15 @@
                     ]
                 },
                 {
-                    "name": "placeholder",
-                    "layout": "VerticalStack"
+                    "name": "mail",
+                    "layout": "VerticalStack",
+                    "initial_workspace_rules": [
+                        {
+                            "kind": "Exe",
+                            "id": "olk.exe",
+                            "matching_strategy": "Equals"
+                        }
+                    ]
                 }
             ]
         },
