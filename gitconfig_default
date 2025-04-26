@@ -1,10 +1,42 @@
-[user]
-	email = 24637207+kkanden@users.noreply.github.com
-	name = oliwia
-[init]
-	defaultbranch = main
-[core]
-	autocrlf = true
-	editor = nvim
 [alias]
-	lg = log --oneline --graph --all --decorate --date=format:'%Y-%m-%d %H:%M' --pretty=format:'%C(yellow)%h%Creset - %C(blue)%an <%ae>%Creset - %C(green)%ad%Creset -%C(red)%d%Creset %s'
+	lg = "log --oneline --graph --all --decorate --date=format:'%Y-%m-%d %H:%M' --pretty=format:'%C(yellow)%h%Creset - %C(blue)%an <%ae>%Creset - %C(green)%ad%Creset -%C(red)%d%Creset %s'"
+
+[colors "diff"]
+	context = "white"
+	frag = "magenta"
+	meta = "black bold"
+	whitespace = "yellow reverse"
+
+[core]
+    autocrlf = true
+	editor = "nvim"
+
+[diff]
+	context = 3
+	interHunkContext = 10
+	renames = "copies"
+
+[init]
+	defaultbranch = "main"
+
+[pull]
+	rebase = true
+
+[push]
+	autoSetupRemote = true
+	default = "current"
+
+[rebase]
+	autoStash = true
+
+[status]
+	branch = true
+	short = true
+	showStash = true
+
+[url "https://github.com/"]
+	insteadOf = "gh:"
+
+[user]
+	email = "24637207+kkanden@users.noreply.github.com"
+	name = "oliwia"
