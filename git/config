@@ -1,5 +1,6 @@
 [alias]
 	lg = "log --oneline --graph --all --decorate --date=format:'%Y-%m-%d %H:%M' --pretty=format:'%C(yellow)%h%Creset - %C(blue)%an <%ae>%Creset - %C(green)%ad%Creset -%C(red)%d%Creset %s'"
+    lgu = "log --oneline origin..HEAD"
 
 [colors "diff"]
 	context = "white"
