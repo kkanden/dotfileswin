@@ -135,7 +135,7 @@ widgets:
         type: "yasb.weather.WeatherWidget"
         options:
             label: "<span>{icon}</span> {conditions} {temp} \u00b7 \u2193 {min_temp} \u2191 {max_temp} \u00b7 {precip}"
-            api_key: "3bf4cf9a7c3f40d6b31174128242807"
+            api_key: "9914a3c1bc584e609a392927252904"
             update_interval: 600
             units: "metric"
             hide_decimal: true
