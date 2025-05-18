@@ -17,7 +17,7 @@
     },
     "mouse_follows_focus": false,
     "animation": {
-        "enabled": true,
+        "enabled": false,
         "duration": 250,
         "fps": 120,
         "style": "EaseInOutExpo"
@@ -54,6 +54,11 @@
                         {
                             "kind": "Exe",
                             "id": "WindowsTerminal.exe",
+                            "matching_strategy": "Equals"
+                        },
+                        {
+                            "kind": "Exe",
+                            "id": "alacritty.exe",
                             "matching_strategy": "Equals"
                         }
                     ]
