@@ -1,6 +1,5 @@
 [general]
 import = ["themes/gruvbox_material_medium_dark.toml"]
-working_directory = "~"
 live_config_reload = true
 
 [window]
@@ -21,4 +20,7 @@ style = { shape = "Beam", blinking = "Off" }
 thickness = 0.25
 
 [terminal]
-shell = "wsl"
+shell = { program = "wsl", args = ["~"] }
+
+[keyboard]
+bindings = [ { key = "Space", mods = "Control", chars = "\u0000" } ]
