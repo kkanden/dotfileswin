@@ -1,0 +1,24 @@
+[general]
+import = ["themes/gruvbox_material_medium_dark.toml"]
+working_directory = "~"
+live_config_reload = true
+
+[window]
+dimensions = { columns = 190, lines = 49 }
+padding = { x = 0, y = 0 }
+decorations = "None"
+opacity = 0.9
+blur = true
+startup_mode = "Windowed"
+dynamic_title = false
+
+[font]
+normal = { family = "JetBrainsMono Nerd Font", style = "SemiBold" }
+size = 12
+
+[cursor]
+style = { shape = "Beam", blinking = "Off" }
+thickness = 0.25
+
+[terminal]
+shell = "wsl"
