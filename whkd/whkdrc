@@ -8,7 +8,7 @@ alt + shift + r         : komorebic stop --whkd; komorebic start --whkd
 # The apps will be focused if open, or launched if not open
 alt + b                 : . "$env:USERPROFILE\.config\utils\focus_launch_browser.ps1"
 alt + shift + b         : . (. $("$env:USERPROFILE\.config\utils\get_default_browser.ps1")).BrowserPath
-alt + t                 : . "$env:USERPROFILE\.config\utils\focus_or_launch.ps1" -ProcessName "WindowsTerminal" -LaunchCommand "wt"
+alt + t                 : . "$env:USERPROFILE\.config\utils\focus_or_launch.ps1" -ProcessName "Alacritty" -LaunchCommand "alacritty"
 alt + shift + t         : wt
 alt + v                 : . "$env:USERPROFILE\.config\utils\focus_or_launch.ps1" -ProcessName "spotify" -LaunchCommand "C:\Users\oliwia\AppData\Roaming\Spotify\Spotify.exe"
 alt + d                 : . "$env:USERPROFILE\.config\utils\focus_or_launch.ps1" -ProcessName "Discord" -LaunchCommand "C:\Users\oliwia\AppData\Local\Discord\Update.exe" -LaunchArguments "--processStart Discord.exe"
