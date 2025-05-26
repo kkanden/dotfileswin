@@ -51,7 +51,7 @@
     "confirmCloseAllTabs": false,
     "copyFormatting": "none",
     "copyOnSelect": false,
-    "defaultProfile": "{672f9ad0-5bf2-4f92-8d8c-4c55401c1fae}",
+    "defaultProfile": "{03a8776d-3a64-4559-9af0-18a3a95e6516}",
     "initialPosition": ",",
     "keybindings": 
     [
@@ -428,12 +428,33 @@
             "selectionBackground": "#2D4F67",
             "white": "#C8C093",
             "yellow": "#C0A36E"
+        },
+        {
+            "background": "#141414",
+            "black": "#252530",
+            "blue": "#6E94B2",
+            "brightBlack": "#606079",
+            "brightBlue": "#8BA9C1",
+            "brightCyan": "#BEBEDA",
+            "brightGreen": "#99B782",
+            "brightPurple": "#C9B1CA",
+            "brightRed": "#E08398",
+            "brightWhite": "#D7D7D7",
+            "brightYellow": "#F5CB96",
+            "cursorColor": "#CDCDCD",
+            "cyan": "#AEAED1",
+            "foreground": "#CDCDCD",
+            "green": "#7FA563",
+            "name": "Vague",
+            "purple": "#BB9DBD",
+            "red": "#D8647E",
+            "selectionBackground": "#252530",
+            "white": "#CDCDCD",
+            "yellow": "#F3BE7C"
         }
     ],
     "showTabsInTitlebar": true,
     "showTerminalTitleInTitlebar": false,
-    "startOnUserLogin": true,
-    "startupActions": "; new-tab -p \"PowerShell 7\"; focus-tab --previous",
     "themes": [],
     "useAcrylicInTabRow": false
 }
