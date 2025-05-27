@@ -1,18 +1,23 @@
 :root {
     /* colors from the gruvbox material mix medium/soft palette */
-    --red: #d8647e;
-    --black_dark: #141415;
-    --black: #252530;
-    --black_bright: #606079;
-    --white: #cdcdcd;
-    --cyan: #aeaed1;
+    --yellow: #e9b143;
+    --red: #f2594b;
+    --bg0: #32302f;
+    --bg1: #32302f;
+    --bg2: #3c3836;
+    --bg3: #45403d;
+    --bg4: #504945;
+    --bg5: #665c54;
+    --bg_dim: #282828;
+    --grey0: #7c6f64;
+    --grey1: #928374;
+    --grey2: #a89984;
+    --fg0: #e2cca9;
 
-    --accent: #d8647e;
-    --accent-secondary: #aeaed1;
-    --background: #141415; 
-    --background-secondary: #606079;
-    --background-widget: #141415;
-    --text: #cdcdcd;
+    --accent: #e9b143;
+    --background: rgba(69, 64, 61, 0.85); /*bg3*/
+    --background-widget: rgba(50, 48, 45, 0.6); /*bg0*/
+    --text: #e2cca9;
 }
 
 /* GLOBAL */
@@ -120,23 +125,23 @@
     height: 10px;
     width: 9px;
     border-radius: 2px;
-    background-color: var(--black);
+    background-color: var(--bg4);
     color: rgba(0, 0, 0, 0);
 }
 
 .komorebi-workspaces .ws-btn:hover {
     color: rgba(0, 0, 0, 0);
-    background-color: var(--text);
+    background-color: var(--grey0);
 }
 
 .komorebi-workspaces .ws-btn.populated:hover {
     color: rgba(0, 0, 0, 0);
-    background-color: var(--text);
+    background-color: var(--grey1);
 }
 
 .komorebi-workspaces .ws-btn.populated {
     color: rgba(0, 0, 0, 0);
-    background-color: var(--background-secondary);
+    background-color: var(--grey1);
 }
 
 .komorebi-workspaces .ws-btn.active {

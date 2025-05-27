@@ -45,7 +45,7 @@ widgets:
             sleep_timer: 60
             hide_empty: true
             gradient: 0
-            foreground: "#cdcdcd"
+            foreground: "#e2cca9"
             container_padding:
                 top: 3
                 right: 2

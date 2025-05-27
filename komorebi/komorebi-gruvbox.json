@@ -10,10 +10,10 @@
     "border_offset": -1,
     "border_style": "Square",
     "border_colours": {
-        "single": "#d8647e",
-        "monocle": "#7fa653",
-        "unfocused": "#cdcdcd",
-        "stack": "#6e94b2"
+        "single": "#e9b143",
+        "monocle": "#af2528",
+        "unfocused": "#e0e9d3",
+        "stack": "#266b79"
     },
     "mouse_follows_focus": false,
     "animation": {

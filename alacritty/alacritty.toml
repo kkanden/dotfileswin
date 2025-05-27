@@ -1,12 +1,12 @@
 [general]
-import = ["themes/gruvbox_material_medium_dark.toml"]
+import = ["themes/vague.toml"]
 live_config_reload = true
 
 [window]
 dimensions = { columns = 190, lines = 49 }
 padding = { x = 0, y = 0 }
 decorations = "None"
-opacity = 0.9
+opacity = 1
 blur = true
 startup_mode = "Windowed"
 dynamic_title = false
